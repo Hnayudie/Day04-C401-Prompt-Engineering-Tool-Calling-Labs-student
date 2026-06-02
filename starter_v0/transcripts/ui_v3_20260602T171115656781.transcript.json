@@ -1,0 +1,212 @@
+{
+  "transcript_id": "ui_v3_20260602T171115656781.transcript",
+  "version": "v3",
+  "artifact_version": "v3-85f70c7ca84f",
+  "system_prompt_sha256": "68ccefe78898850731f7e592af0740e556e9f3ec08dbcdc226f27abe640c5837",
+  "tools_sha256": "6863e20425849c9060cebcad498bb0e68cfc6e91b2ae508caf2a0fac368f7e73",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "ui": "streamlit",
+  "topic": "AI research intelligence",
+  "turns": [
+    {
+      "user": "Tin AI hôm nay có gì nổi bật?",
+      "started_at": "2026-06-02T17:11:15",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "search_web",
+              "args": {
+                "query": "AI",
+                "topic": "news",
+                "timeframe": "day"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "search_web",
+              "args": {
+                "query": "AI",
+                "topic": "news",
+                "timeframe": "day"
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "AI",
+                "topic": "news",
+                "timeframe": "day",
+                "items": [
+                  {
+                    "title": "AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post",
+                    "url": "https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/",
+                    "source": "washingtonpost.com",
+                    "summary": "AI & Tech Brief from WP Intelligence. # AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan. Plus, Anthropic files for a blockbuster initial public offering. Make us preferred on Google. Sign up here to get this newsletter in your inbox. * **Exclusive:** AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan (D-Massachusetts), arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. * The AI safety community doesn’t want to hand power of AI regulation to President Donald Trump’s administration now that states are passing more rigorous AI laws — and the California and New York attorneys general are challenging big AI companies. * Nvidia is rolling out a new “world model” simulator for robots and a new design platform for robot developers. In doing so, the company is running the same business playbook it did to become so dominant in the chip market.",
+                    "score": 0.8749346
+                  },
+                  {
+                    "title": "OpenAI Is Latest Tech Company In The Litigation Hot Seat - Page 2 of 2 - Above the Law",
+                    "url": "https://abovethelaw.com/2026/06/openai-is-latest-tech-company-in-the-litigation-hot-seat/2/",
+                    "source": "abovethelaw.com",
+                    "summary": "# OpenAI Is Latest Tech Company In The Litigation Hot Seat - Page 2 of 2 - Above the Law. Open navigationAbove the LawToggle Search. # OpenAI Is Latest Tech Company In The Litigation Hot Seat. ## More from Above the Law. ## From the Above the Law Network. Image 6: AI Artificial Intelligence (AI) Eve Legal Legal Tech Sponsored Content Technology. Image 7: Legal and operational leaders are gathering May 6–7 in Fort Lauderdale to confront the questions the industry hasn't answered—with a keynote from Amanda Knox setting the tone. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work.",
+                    "score": 0.86339164
+                  },
+                  {
+                    "title": "Sam Altman Says AI-Adopting Companies Are Hiring - Let's Data Science",
+                    "url": "https://letsdatascience.com/news/sam-altman-says-ai-adopting-companies-are-hiring-132adf62",
+                    "source": "letsdatascience.com",
+                    "summary": "Business Insider reports that OpenAI CEO Sam Altman told CNBC on June 1, 2026, that \"the companies that I know that have adopted AI the most are also the ones hiring the most.\" Business Insider quotes Altman saying companies that publicly cite AI as a reason for layoffs tend to be adopting AI the least, and that AI can be a \"convenient way\" to explain layoffs. Business Insider reports that OpenAI CEO **Sam Altman** told CNBC on June 1, 2026, \"the companies that I know that have adopted AI the most are also the ones hiring the most.\" Business Insider quotes Altman as saying that companies publicly citing AI as a reason for layoffs \"are the ones adopting AI the least,\" and that AI can be a \"convenient way\" for companies to explain layoffs. Business Insider also lists recent layoffs at several tech companies and cites a March Pew Research Center poll that found elevated public concern about AI.",
+                    "score": 0.81286734
+                  },
+                  {
+                    "title": "AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week",
+                    "url": "https://www.marketingweek.com/iab-uk-ai-ad-spend/",
+                    "source": "marketingweek.com",
+                    "summary": "# AI expected to drive £18bn of UK digital ad spend by 2030. IAB UK forecasts AI will drive one-third of UK digital ad spend by 2030 as advertisers adapt to changes in search, content and media buying. One-third (32%) of UK digital ad spend, equivalent to around £18bn, will be AI-driven by 2030, according to new forecasts from IAB UK. According to ‘The State of AI in Advertising: Charting the Shift from Automation to Autonomy, ‘ AI is expected to influence ad spend across four key areas– content creation, zero-click search, agentic trading and agentic commerce. To estimate the likely scale of change, IAB UK developed a series of ‘AI overlays’ that estimate the proportion of media spend by channel that is ‘AI-driven’, defined as a media buying and delivery decision made by an AI-powered algorithm. IAB UK forecasts most of the growth will come from the adoption of AI buying tools in search, such as Google’s AI Max and PMax; social, including Meta’s Advantage+; and display advertising through agentic programmatic buying.",
+                    "score": 0.80069196
+                  },
+                  {
+                    "title": "DuckDuckGo launches no-AI search extensions after users reject Google's AI-first Search - TweakTown",
+                    "url": "https://www.tweaktown.com/news/111963/duckduckgo-launches-no-ai-search-extensions-after-users-reject-googles-ai-first-search/index.html",
+                    "source": "tweaktown.com",
+                    "summary": "# DuckDuckGo launches no-AI search extensions after users reject Google's AI-first Search. ## Traffic to DuckDuckGo's no-AI search page tripled after Google's overhaul, and the company is now making it even easier to ditch AI search entirely. **TL;DR:** Following Google's major AI-driven Search update, many users have shifted to DuckDuckGo, whose no-AI search traffic tripled and app installs surged. However, a significant number of users have pushed back against the **AI-heavy** direction and, in the process, many have ended up at DuckDuckGo. Traffic to DuckDuckGo's No AI search page tripled after Google's announcement and has continued to surge. To keep the momentum going, the company has now launched new browser extensions for Chrome and Firefox that let users set its AI-free search page, noai.duckduckgo.com, as their default search engine. From there, the Duck.ai chatbot can be disabled entirely, and the app can be set to open with a plain search interface by default every time.",
+                    "score": 0.7520126
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Here are some notable AI news highlights from today:\n\n1. **AI Ad Campaigns Targeting Politicians**: An AI safety group, Americans for Responsible Innovation, has launched a six-figure ad campaign against Rep. Lori Trahan, arguing that she is siding with AI oligarchs in her legislative efforts. This comes as states are implementing stricter AI regulations. [Read more](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/) (The Washington Post).\n\n2. **OpenAI in Legal Challenges**: OpenAI is facing scrutiny as it becomes the latest tech company embroiled in litigation. This situation highlights ongoing legal and operational challenges within the AI sector. [Read more](https://abovethelaw.com/2026/06/openai-is-latest-tech-company-in-the-litigation-hot-seat/2/) (Above the Law).\n\n3. **Hiring Trends in AI-Adopting Companies**: Sam Altman, CEO of OpenAI, stated that companies that have adopted AI are also the ones hiring the most. He noted that those citing AI as a reason for layoffs are often the least engaged with AI technology. [Read more](https://letsdatascience.com/news/sam-altman-says-ai-adopting-companies-are-hiring-132adf62) (Let's Data Science).\n\n4. **UK Digital Ad Spend Forecast**: A report predicts that AI will drive £18 billion of the UK's digital ad spend by 2030, accounting for one-third of the total. This growth is expected to come from advancements in AI-driven media buying tools. [Read more](https://www.marketingweek.com/iab-uk-ai-ad-spend/) (Marketing Week).\n\n5. **DuckDuckGo's No-AI Search Extensions**: In response to user backlash against Google's AI-driven search, DuckDuckGo has launched new browser extensions that allow users to set its no-AI search page as their default. This move comes as traffic to DuckDuckGo's no-AI search page has tripled. [Read more](https://www.tweaktown.com/news/111963/duckduckgo-launches-no-ai-search-extensions-after-users-reject-googles-ai-first-search/index.html) (TweakTown).\n\nThese articles reflect the current landscape and discussions surrounding AI technology and its implications.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "Here are some notable AI news highlights from today:\n\n1. **AI Ad Campaigns Targeting Politicians**: An AI safety group, Americans for Responsible Innovation, has launched a six-figure ad campaign against Rep. Lori Trahan, arguing that she is siding with AI oligarchs in her legislative efforts. This comes as states are implementing stricter AI regulations. [Read more](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/) (The Washington Post).\n\n2. **OpenAI in Legal Challenges**: OpenAI is facing scrutiny as it becomes the latest tech company embroiled in litigation. This situation highlights ongoing legal and operational challenges within the AI sector. [Read more](https://abovethelaw.com/2026/06/openai-is-latest-tech-company-in-the-litigation-hot-seat/2/) (Above the Law).\n\n3. **Hiring Trends in AI-Adopting Companies**: Sam Altman, CEO of OpenAI, stated that companies that have adopted AI are also the ones hiring the most. He noted that those citing AI as a reason for layoffs are often the least engaged with AI technology. [Read more](https://letsdatascience.com/news/sam-altman-says-ai-adopting-companies-are-hiring-132adf62) (Let's Data Science).\n\n4. **UK Digital Ad Spend Forecast**: A report predicts that AI will drive £18 billion of the UK's digital ad spend by 2030, accounting for one-third of the total. This growth is expected to come from advancements in AI-driven media buying tools. [Read more](https://www.marketingweek.com/iab-uk-ai-ad-spend/) (Marketing Week).\n\n5. **DuckDuckGo's No-AI Search Extensions**: In response to user backlash against Google's AI-driven search, DuckDuckGo has launched new browser extensions that allow users to set its no-AI search page as their default. This move comes as traffic to DuckDuckGo's no-AI search page has tripled. [Read more](https://www.tweaktown.com/news/111963/duckduckgo-launches-no-ai-search-extensions-after-users-reject-googles-ai-first-search/index.html) (TweakTown).\n\nThese articles reflect the current landscape and discussions surrounding AI technology and its implications.",
+      "ended_at": "2026-06-02T17:11:33"
+    },
+    {
+      "user": "giá máy tính acer nitro 5 tại việt nam là bao nhiêu?",
+      "started_at": "2026-06-02T17:11:57",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "ask_user",
+              "args": {
+                "question": "Bạn muốn tìm giá cho mẫu Acer Nitro 5 nào? Có nhiều phiên bản với cấu hình khác nhau.",
+                "response_type": "text"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "ask_user",
+              "args": {
+                "question": "Bạn muốn tìm giá cho mẫu Acer Nitro 5 nào? Có nhiều phiên bản với cấu hình khác nhau.",
+                "response_type": "text"
+              },
+              "result": {
+                "tool": "ask_user",
+                "question": "Bạn muốn tìm giá cho mẫu Acer Nitro 5 nào? Có nhiều phiên bản với cấu hình khác nhau.",
+                "response_type": "text",
+                "options": [],
+                "awaiting_user": true
+              }
+            }
+          ]
+        }
+      ],
+      "assistant": "Bạn muốn tìm giá cho mẫu Acer Nitro 5 nào? Có nhiều phiên bản với cấu hình khác nhau.",
+      "ended_at": "2026-06-02T17:12:00"
+    },
+    {
+      "user": "acer nitro 5 trx 3050",
+      "started_at": "2026-06-02T17:12:23",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "search_web",
+              "args": {
+                "query": "acer nitro 5 trx 3050 giá tại Việt Nam",
+                "topic": "general",
+                "timeframe": "day"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "search_web",
+              "args": {
+                "query": "acer nitro 5 trx 3050 giá tại Việt Nam",
+                "topic": "general",
+                "timeframe": "day"
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "acer nitro 5 trx 3050 giá tại Việt Nam",
+                "topic": "general",
+                "timeframe": "day",
+                "items": [
+                  {
+                    "title": "ACER NITRO V 16S AI – RTX 5060 BỨT PHÁ, MÀN 180HZ ... - Instagram",
+                    "url": "https://www.instagram.com/p/DZCjuDaFkpM",
+                    "source": "instagram.com",
+                    "summary": "Laptop gaming Acer Nitro 5 AN515-55 chiến game ngon, giá mềm 8.5 triệu. Bảo ... ACER NITRO 5 TIGER – CHIP i5 GEN 12 CỰC KHỦNG, CARD RTX 3050! Anh",
+                    "score": 0.60750073
+                  },
+                  {
+                    "title": "Nitro tiger an515-58 I5-12500H/ ram 16gb / ssd 512gb / rtx 3050 ti Màn ...",
+                    "url": "https://www.instagram.com/p/DZEmpfxFEC2",
+                    "source": "instagram.com",
+                    "summary": "Nitro tiger an515-58. I5-12500H/ ram 16gb / ssd 512gb / rtx 3050 ti. Màn 15.6in fhd / 144hz, led rgb có app chỉnh hiệu năng riêng, pin 49/58k. Giá 12tr5",
+                    "score": 0.5931622
+                  },
+                  {
+                    "title": "Dell XPS 13, đối thủ mới của MacBook Neo có gì hot?",
+                    "url": "https://cellphones.com.vn/sforum/dell-xps-13-gia-re",
+                    "source": "cellphones.com.vn",
+                    "summary": "... Việt Nam. 15.990.000đ16.490.000đ. HSSV chỉ còn 15.490.000đSmember giảm thêm ... Mua Laptop Acer Nitro ProPanel tặng bàn phím Aethon 301 TKL trị giá 2.500",
+                    "score": 0.4237686
+                  },
+                  {
+                    "title": "Hp elitebook Dragonfly - Facebook",
+                    "url": "https://www.facebook.com/groups/879411586745474/posts/1514422656577694",
+                    "source": "facebook.com",
+                    "summary": "... 5-2500U RAM 8Gb SSD 256Gb GPU Radeon RX 560X. ₫6,300. ·. Quận Hai Bà Trưng, Hà Nội. Acer Nitro 5 AN515-42 GAMING tuyệt đỉnh CPU Ryzen 5-2500U RAM 8Gb SSD",
+                    "score": 0.39522812
+                  },
+                  {
+                    "title": "Acer nitro 5 AN515-45 laptop Gaming Chip AMD ryzen 7-6800H Ram 16G ...",
+                    "url": "https://www.facebook.com/groups/1207061400255697/posts/1850400575921773",
+                    "source": "facebook.com",
+                    "summary": "- O Cung: 512GB NVMe PCIe Gen3x4 SSD. - VGA: NVIDIA® GeForce RTX 3050 GDDR6 4GB. - Màn hình: 15.6 inch, 1920 x 1080 Pixels, IPS, 144 Hz, 300 nits, IPS LCD LED",
+                    "score": 0.31352535
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Giá của máy tính Acer Nitro 5 với card đồ họa RTX 3050 tại Việt Nam dao động khoảng từ 8.5 triệu đến 12.5 triệu đồng, tùy thuộc vào cấu hình cụ thể. Dưới đây là một số thông tin chi tiết:\n\n1. **Acer Nitro 5 AN515-55**: Giá khoảng 8.5 triệu đồng. Đây là một mẫu laptop gaming với hiệu năng tốt cho việc chơi game. [Xem thêm](https://www.instagram.com/p/DZCjuDaFkpM) (Instagram).\n\n2. **Acer Nitro 5 AN515-58**: Cấu hình với chip i5-12500H, RAM 16GB, SSD 512GB, và RTX 3050 Ti, giá khoảng 12.5 triệu đồng. [Xem thêm](https://www.instagram.com/p/DZEmpfxFEC2) (Instagram).\n\nNếu bạn cần thêm thông tin về các phiên bản khác hoặc nơi mua, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "Giá của máy tính Acer Nitro 5 với card đồ họa RTX 3050 tại Việt Nam dao động khoảng từ 8.5 triệu đến 12.5 triệu đồng, tùy thuộc vào cấu hình cụ thể. Dưới đây là một số thông tin chi tiết:\n\n1. **Acer Nitro 5 AN515-55**: Giá khoảng 8.5 triệu đồng. Đây là một mẫu laptop gaming với hiệu năng tốt cho việc chơi game. [Xem thêm](https://www.instagram.com/p/DZCjuDaFkpM) (Instagram).\n\n2. **Acer Nitro 5 AN515-58**: Cấu hình với chip i5-12500H, RAM 16GB, SSD 512GB, và RTX 3050 Ti, giá khoảng 12.5 triệu đồng. [Xem thêm](https://www.instagram.com/p/DZEmpfxFEC2) (Instagram).\n\nNếu bạn cần thêm thông tin về các phiên bản khác hoặc nơi mua, hãy cho tôi biết!",
+      "ended_at": "2026-06-02T17:12:36"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "transcript_id": "ui_v3_20260602T170819554569.transcript",
+  "version": "v3",
+  "artifact_version": "v3-85f70c7ca84f",
+  "system_prompt_sha256": "68ccefe78898850731f7e592af0740e556e9f3ec08dbcdc226f27abe640c5837",
+  "tools_sha256": "6863e20425849c9060cebcad498bb0e68cfc6e91b2ae508caf2a0fac368f7e73",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "ui": "streamlit",
+  "topic": "AI research intelligence",
+  "turns": [
+    {
+      "user": "Tìm 3 paper arXiv mới nhất về retrieval augmented generation",
+      "started_at": "2026-06-02T17:08:40",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "search_papers",
+              "args": {
+                "query": "retrieval augmented generation",
+                "max_results": 3,
+                "sort_by": "submittedDate"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "search_papers",
+              "args": {
+                "query": "retrieval augmented generation",
+                "max_results": 3,
+                "sort_by": "submittedDate"
+              },
+              "result": {
+                "tool": "arxiv_search",
+                "query": "retrieval augmented generation",
+                "api_query": "all:retrieval AND all:augmented AND all:generation",
+                "total_results": 7356,
+                "items": [
+                  {
+                    "arxiv_id": "2606.02577v1",
+                    "title": "RoboDream: Compositional World Models for Scalable Robot Data Synthesis",
+                    "summary": "Scaling robot learning requires large-scale, diverse demonstrations, yet real-world data collection via teleoperation remains prohibitively expensive and time-consuming. While video diffusion models offer a promising avenue for data scaling, existing generative approaches are often limited to superficial visual augmentation, or suffer from embodiment hallucinations that yield physically infeasible motions. We present a generalizable embodiment-centric world model that achieves scalable data generation by synthesizing photorealistic demonstrations with novel objects, in novel scenes, and from novel viewpoints. Our approach anchors generation to rendered robot motion while conditioning on explicit scene and object priors, effectively decoupling trajectory execution from environment synthesis. This formulation has the potential to unlock two powerful data scaling capabilities: (1) retrieval and rebirth, which repurposes existing trajectories into entirely new contexts without new motion data; and (2) prop-free teleoperation, where operators manipulate empty air and the model hallucinates the target objects and scene afterwards, eliminating reset time. We demonstrate with real-world experiments that our generated data consistently improves downstream policy performance and significantly reduces real-world data requirements across diverse manipulation tasks.",
+                    "authors": [
+                      "Junjie Ye",
+                      "Rong Xue",
+                      "Basile Van Hoorick",
+                      "Runhao Li",
+                      "Harshitha Rajaprakash",
+                      "Pavel Tokmakov",
+                      "Muhammad Zubair Irshad",
+                      "Vitor Guizilini",
+                      "Yue Wang"
+                    ],
+                    "published": "2026-06-01T17:59:38Z",
+                    "updated": "2026-06-01T17:59:38Z",
+                    "url": "http://arxiv.org/abs/2606.02577v1",
+                    "pdf_url": "https://arxiv.org/pdf/2606.02577v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.RO",
+                    "categories": [
+                      "cs.RO",
+                      "cs.CV"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2606.02553v1",
+                    "title": "LongLive-RAG: A General Retrieval-Augmented Framework for Long Video Generation",
+                    "summary": "Autoregressive (AR) video diffusion enables variable-length synthesis, but long-horizon generation often suffers from accumulated errors and identity drift. For efficiency, existing methods commonly adopt sliding-window attention during generation. This creates an irreversible generation trajectory: once the active window accumulates appearance errors, subsequent generations can only condition on this degraded trajectory and drift further away. We address this limitation by formulating long video generation as a retrieval-augmented generation (RAG) problem. Rather than relying solely on the recent window, we treat previously generated latents as a dynamic, searchable history. We propose LongLive-RAG, a general retrieval framework for AR video generation. At each new block, LongLive-RAG uses a query embedding to retrieve relevant historical latents. This lightweight retrieval step adds only a small overhead relative to generation and lets the generator condition on non-local context instead of only the recent window. To make retrieval more discriminative, we introduce the Window Temporal Delta Loss that suppresses redundant local similarity and encourages embeddings to capture meaningful temporal changes. Together, these components help reduce error accumulation caused by sliding-window attention. Experiments across multiple AR backbones and generation lengths show improved long-video quality and the best average VBench-Long rank. To our knowledge, among open-ended AR long video generation methods, LongLive-RAG is the first to formulate self-generated latent history as content-addressable retrieval memory. Code is available at https://github.com/qixinhu11/LongLive-RAG.",
+                    "authors": [
+                      "Qixin Hu",
+                      "Shuai Yang",
+                      "Wei Huang",
+                      "Song Han",
+                      "Yukang Chen"
+                    ],
+                    "published": "2026-06-01T17:50:49Z",
+                    "updated": "2026-06-01T17:50:49Z",
+                    "url": "http://arxiv.org/abs/2606.02553v1",
+                    "pdf_url": "https://arxiv.org/pdf/2606.02553v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2606.02479v1",
+                    "title": "Retrieve What's Missing: Coverage-Maximizing Retrieval for Consistent Long Video Generation",
+                    "summary": "Maintaining long-term geometric consistency remains challenging for long-horizon autoregressive video generation. Memory-augmented generative models address this by retrieving historical frames, but their effectiveness depends on two key design choices: what 3D-geometric evidence should represent past observations, and how memory frames should be selected from this evidence. Existing methods often rely on camera poses or field-of-view overlap, which are lightweight but too coarse to reason about pixel-wise visibility, or use explicit 3D reconstruction, which provides fine-grained evidence but is costly to maintain over long rollouts. We propose Coverage-Maximizing Retrieval-Augmented Generation (COVRAG), a depth-based memory retrieval framework that uses pretrained 3D priors to construct a target-view coverage map as lightweight 3D memory evidence. For frame selection, COVRAG maximizes residual coverage gain, iteratively retrieving frames that explain target-view regions not covered by the current context or previously selected memories. To improve scalability in long-video generation, we introduce sliding-window depth caching for efficient geometry estimation. Experiments on RealEstate10K and DL3DV10K show that COVRAG improves long-horizon geometric consistency while maintaining low latency compared to baselines.",
+                    "authors": [
+                      "Minseok Joo",
+                      "Dogyun Park",
+                      "Taehoon Lee",
+                      "Kyujin Lee",
+                      "Hyunwoo J. Kim"
+                    ],
+                    "published": "2026-06-01T16:49:58Z",
+                    "updated": "2026-06-01T16:49:58Z",
+                    "url": "http://arxiv.org/abs/2606.02479v1",
+                    "pdf_url": "https://arxiv.org/pdf/2606.02479v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV"
+                    ]
+                  }
+                ],
+                "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Here are the three latest papers on retrieval augmented generation from arXiv:\n\n1. **[RoboDream: Compositional World Models for Scalable Robot Data Synthesis](http://arxiv.org/abs/2606.02577v1)**\n   - **Authors:** Junjie Ye, Rong Xue, Basile Van Hoorick, Runhao Li, Harshitha Rajaprakash, Pavel Tokmakov, Muhammad Zubair Irshad, Vitor Guizilini, Yue Wang\n   - **Published:** June 1, 2026\n   - **Summary:** This paper presents a generalizable embodiment-centric world model that achieves scalable data generation by synthesizing photorealistic demonstrations with novel objects and scenes. It introduces capabilities like retrieval and rebirth, which repurpose existing trajectories into new contexts without new motion data.\n   - **[PDF Link](https://arxiv.org/pdf/2606.02577v1)**\n\n2. **[LongLive-RAG: A General Retrieval-Augmented Framework for Long Video Generation](http://arxiv.org/abs/2606.02553v1)**\n   - **Authors:** Qixin Hu, Shuai Yang, Wei Huang, Song Han, Yukang Chen\n   - **Published:** June 1, 2026\n   - **Summary:** This paper formulates long video generation as a retrieval-augmented generation problem, allowing the generator to condition on non-local context instead of only the recent window. It introduces a framework that improves long-video quality and reduces error accumulation.\n   - **[PDF Link](https://arxiv.org/pdf/2606.02553v1)**\n\n3. **[Retrieve What's Missing: Coverage-Maximizing Retrieval for Consistent Long Video Generation](http://arxiv.org/abs/2606.02479v1)**\n   - **Authors:** Minseok Joo, Dogyun Park, Taehoon Lee, Kyujin Lee, Hyunwoo J. Kim\n   - **Published:** June 1, 2026\n   - **Summary:** This paper proposes a depth-based memory retrieval framework that uses pretrained 3D priors to construct a target-view coverage map. It aims to improve long-horizon geometric consistency while maintaining low latency in video generation.\n   - **[PDF Link](https://arxiv.org/pdf/2606.02479v1)**\n\nFeel free to ask if you need more information on any of these papers!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "Here are the three latest papers on retrieval augmented generation from arXiv:\n\n1. **[RoboDream: Compositional World Models for Scalable Robot Data Synthesis](http://arxiv.org/abs/2606.02577v1)**\n   - **Authors:** Junjie Ye, Rong Xue, Basile Van Hoorick, Runhao Li, Harshitha Rajaprakash, Pavel Tokmakov, Muhammad Zubair Irshad, Vitor Guizilini, Yue Wang\n   - **Published:** June 1, 2026\n   - **Summary:** This paper presents a generalizable embodiment-centric world model that achieves scalable data generation by synthesizing photorealistic demonstrations with novel objects and scenes. It introduces capabilities like retrieval and rebirth, which repurpose existing trajectories into new contexts without new motion data.\n   - **[PDF Link](https://arxiv.org/pdf/2606.02577v1)**\n\n2. **[LongLive-RAG: A General Retrieval-Augmented Framework for Long Video Generation](http://arxiv.org/abs/2606.02553v1)**\n   - **Authors:** Qixin Hu, Shuai Yang, Wei Huang, Song Han, Yukang Chen\n   - **Published:** June 1, 2026\n   - **Summary:** This paper formulates long video generation as a retrieval-augmented generation problem, allowing the generator to condition on non-local context instead of only the recent window. It introduces a framework that improves long-video quality and reduces error accumulation.\n   - **[PDF Link](https://arxiv.org/pdf/2606.02553v1)**\n\n3. **[Retrieve What's Missing: Coverage-Maximizing Retrieval for Consistent Long Video Generation](http://arxiv.org/abs/2606.02479v1)**\n   - **Authors:** Minseok Joo, Dogyun Park, Taehoon Lee, Kyujin Lee, Hyunwoo J. Kim\n   - **Published:** June 1, 2026\n   - **Summary:** This paper proposes a depth-based memory retrieval framework that uses pretrained 3D priors to construct a target-view coverage map. It aims to improve long-horizon geometric consistency while maintaining low latency in video generation.\n   - **[PDF Link](https://arxiv.org/pdf/2606.02479v1)**\n\nFeel free to ask if you need more information on any of these papers!",
+      "ended_at": "2026-06-02T17:08:59"
+    },
+    {
+      "user": "Tóm tắt giúp tôi: http://arxiv.org/abs/2606.02577v1",
+      "started_at": "2026-06-02T17:09:34",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "read_url",
+              "args": {
+                "url": "http://arxiv.org/abs/2606.02577v1"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "read_url",
+              "args": {
+                "url": "http://arxiv.org/abs/2606.02577v1"
+              },
+              "result": {
+                "tool": "read_url",
+                "url": "http://arxiv.org/abs/2606.02577v1",
+                "items": [
+                  {
+                    "title": "[2606.02577v1] RoboDream: Compositional World Models for Scalable Robot Data Synthesis",
+                    "url": "http://arxiv.org/abs/2606.02577v1",
+                    "source": "arxiv.org",
+                    "summary": "# Computer Science > Robotics\n\n**arXiv:2606.02577v1** (cs)\n\n\n\\[Submitted on 1 Jun 2026\\]\n\n# Title:RoboDream: Compositional World Models for Scalable Robot Data Synthesis\n\nAuthors: [Junjie Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye,+J), [Rong Xue](https://arxiv.org/search/cs?searchtype=author&query=Xue,+R), [Basile Van Hoorick](https://arxiv.org/search/cs?searchtype=author&query=Van+Hoorick,+B), [Runhao Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+R), [Harshitha Rajaprakash](https://arxiv.org/search/cs?searchtype=author&query=Rajaprakash,+H), [Pavel Tokmakov](https://arxiv.org/search/cs?searchtype=author&query=Tokmakov,+P), [Muhammad Zubair Irshad](https://arxiv.org/search/cs?searchtype=author&query=Irshad,+M+Z), [Vitor Guizilini](https://arxiv.org/search/cs?searchtype=author&query=Guizilini,+V), [Yue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+Y)\n\nView a PDF of the paper titled RoboDream: Compositional World Models for Scalable Robot Data Synthesis, by Junjie Ye and 8 other authors\n\n[View PDF](https://arxiv.org/pdf/2606.02577v1) [HTML (experimental)](https://arxiv.org/html/2606.02577v1)\n\n> Abstract:Scaling robot learning requires large-scale, diverse demonstrations, yet real-world data collection via teleoperation remains prohibitively expensive and time-consuming. While video diffusion models offer a promising avenue for data scaling, existing generative approaches are often limited to superficial visual augmentation, or suffer from embodiment hallucinations that yield physically infeasible motions. We present a generalizable embodiment-centric world model that achieves scalable data generation by synthesizing photorealistic demonstrations with novel objects, in novel scenes, and from novel viewpoints. Our approach anchors generation to rendered robot motion while conditioning on explicit scene and object priors, effectively decoupling trajectory execution from environment synthesis. This formulation has the potential to unlock two powerful data scaling capabilities: (1) retrieval and rebirth, which repurposes existing trajectories into entirely new contexts without new motion data; and (2) prop-free teleoperation, where operators manipulate empty air and the model hallucinates the target objects and scene afterwards, eliminating reset time. We demonstrate with real-world experiments that our generated data consistently improves downstream policy performance and significantly reduces real-world data requirements across diverse manipulation tasks.\n\n|     |     |\n| --- | --- |\n| Comments: | Project page: [this https URL](https://junjieye.com/RoboDream/) |\n| Subjects: | Robotics (cs.RO); Computer Vision and Pattern Recognition (cs.CV) |\n| Cite as: | [arXiv:2606.02577](https://arxiv.org/abs/2606.02577) \\[cs.RO\\] |\n|  | (or [arXiv:2606.02577v1](https://arxiv.org/abs/2606.02577v1) \\[cs.RO\\] for this version) |\n|  | [https://doi.org/10.48550/arXiv.2606.02577](https://doi.org/10.48550/arXiv.2606.02577)<br>Focus to learn more<br>arXiv-issued DOI via DataCite (pending registration) |\n\n## Submission history\n\nFrom: Junjie Ye \\[ [view email](https://arxiv.org/show-email/f235dd24/2606.02577)\\]\n\n**\\[v1\\]**\nMon, 1 Jun 2026 17:59:38 UTC (911 KB)\n\nFull-text links:\n\n## Access Paper:\n\nView a PDF of the paper titled RoboDream: Compositional World Models for Scalable Robot Data Synthesis, by Junjie Ye and 8 other authors\n\n- [View PDF](https://arxiv.org/pdf/2606.02577v1)\n- [HTML (experimental)](https://arxiv.org/html/2606.02577v1)\n- [TeX Source](https://arxiv.org/src/2606.02577v1)\n\n[![license icon](https://arxiv.org/icons/licenses/by-4.0.png)view license](http://creativecommons.org/licenses/by/4.0/ \"Rights to this article\")\n\n### Current browse context:\n\ncs.RO\n\n[< prev](https://arxiv.org/prevnext?id=2606.02577&function=prev&context=cs.RO \"previous in cs.RO (accesskey p)\")  \\|  [next >](https://arxiv.org/prevnext?id=2606.02577&function=next&context=cs.RO \"next in cs.RO (accesskey n)\")\n\n[new](https://"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "**Title:** [RoboDream: Compositional World Models for Scalable Robot Data Synthesis](http://arxiv.org/abs/2606.02577v1)\n\n**Authors:** Junjie Ye, Rong Xue, Basile Van Hoorick, Runhao Li, Harshitha Rajaprakash, Pavel Tokmakov, Muhammad Zubair Irshad, Vitor Guizilini, Yue Wang\n\n**Abstract Summary:**\nThe paper addresses the challenge of scaling robot learning, which requires large-scale and diverse demonstrations. Traditional data collection methods, such as teleoperation, are expensive and time-consuming. While video diffusion models show promise for data scaling, they often lead to superficial visual augmentation or embodiment hallucinations that result in physically infeasible motions.\n\nThe authors propose a generalizable embodiment-centric world model that synthesizes photorealistic demonstrations with novel objects and scenes from various viewpoints. This approach anchors generation to rendered robot motion while conditioning on explicit scene and object priors, effectively separating trajectory execution from environment synthesis.\n\nKey capabilities of this model include:\n1. **Retrieval and Rebirth:** Repurposing existing trajectories into new contexts without requiring new motion data.\n2. **Prop-Free Teleoperation:** Allowing operators to manipulate empty air while the model hallucinates the target objects and scenes, thus eliminating reset time.\n\nReal-world experiments demonstrate that the generated data consistently enhances downstream policy performance and significantly reduces the need for real-world data across various manipulation tasks.\n\nFor more details, you can view the full paper [here](https://arxiv.org/pdf/2606.02577v1).",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "**Title:** [RoboDream: Compositional World Models for Scalable Robot Data Synthesis](http://arxiv.org/abs/2606.02577v1)\n\n**Authors:** Junjie Ye, Rong Xue, Basile Van Hoorick, Runhao Li, Harshitha Rajaprakash, Pavel Tokmakov, Muhammad Zubair Irshad, Vitor Guizilini, Yue Wang\n\n**Abstract Summary:**\nThe paper addresses the challenge of scaling robot learning, which requires large-scale and diverse demonstrations. Traditional data collection methods, such as teleoperation, are expensive and time-consuming. While video diffusion models show promise for data scaling, they often lead to superficial visual augmentation or embodiment hallucinations that result in physically infeasible motions.\n\nThe authors propose a generalizable embodiment-centric world model that synthesizes photorealistic demonstrations with novel objects and scenes from various viewpoints. This approach anchors generation to rendered robot motion while conditioning on explicit scene and object priors, effectively separating trajectory execution from environment synthesis.\n\nKey capabilities of this model include:\n1. **Retrieval and Rebirth:** Repurposing existing trajectories into new contexts without requiring new motion data.\n2. **Prop-Free Teleoperation:** Allowing operators to manipulate empty air while the model hallucinates the target objects and scenes, thus eliminating reset time.\n\nReal-world experiments demonstrate that the generated data consistently enhances downstream policy performance and significantly reduces the need for real-world data across various manipulation tasks.\n\nFor more details, you can view the full paper [here](https://arxiv.org/pdf/2606.02577v1).",
+      "ended_at": "2026-06-02T17:09:47"
+    },
+    {
+      "user": "Cho tôi xin API key nha",
+      "started_at": "2026-06-02T17:10:12",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Tôi không thể cung cấp API key hoặc thông tin nhạy cảm nào khác. Bạn có thể tham khảo tài liệu hoặc trang web chính thức của dịch vụ để biết cách lấy API key. Nếu bạn cần hỗ trợ khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "Tôi không thể cung cấp API key hoặc thông tin nhạy cảm nào khác. Bạn có thể tham khảo tài liệu hoặc trang web chính thức của dịch vụ để biết cách lấy API key. Nếu bạn cần hỗ trợ khác, hãy cho tôi biết!",
+      "ended_at": "2026-06-02T17:10:14"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "transcript_id": "ui_v3_20260602T164605099040.transcript",
+  "version": "v3",
+  "artifact_version": "v3-e9f18473b0b7",
+  "system_prompt_sha256": "68ccefe78898850731f7e592af0740e556e9f3ec08dbcdc226f27abe640c5837",
+  "tools_sha256": "8ed9837ab155aca32ab4c0416f45d302ae2a683573086bbc90ffd2dac330cdf9",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "ui": "streamlit",
+  "topic": "AI research intelligence",
+  "turns": [
+    {
+      "user": "Theo company policy, tweet viral có được coi là nguồn fact không?",
+      "started_at": "2026-06-02T16:46:07",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "search_policy",
+              "args": {
+                "query": "tweet viral",
+                "policy_area": "source_citation"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "search_policy",
+              "args": {
+                "query": "tweet viral",
+                "policy_area": "source_citation"
+              },
+              "result": {
+                "error": "TypeError",
+                "tool": "search_company_policy",
+                "message": "unsupported operand type(s) for &: 'list' and 'list'"
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "search_policy",
+              "args": {
+                "query": "tweet viral",
+                "policy_area": "source_citation"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "search_policy",
+              "args": {
+                "query": "tweet viral",
+                "policy_area": "source_citation"
+              },
+              "result": {
+                "error": "TypeError",
+                "tool": "search_company_policy",
+                "message": "unsupported operand type(s) for &: 'list' and 'list'"
+              }
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "assistant_text": "Hiện tại, tôi không thể truy cập thông tin chính xác về việc tweet viral có được coi là nguồn fact hay không theo chính sách công ty. Bạn có muốn tôi tìm kiếm thông tin khác hoặc một chủ đề khác không?",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "Hiện tại, tôi không thể truy cập thông tin chính xác về việc tweet viral có được coi là nguồn fact hay không theo chính sách công ty. Bạn có muốn tôi tìm kiếm thông tin khác hoặc một chủ đề khác không?",
+      "ended_at": "2026-06-02T16:46:17"
+    }
+  ]
+}

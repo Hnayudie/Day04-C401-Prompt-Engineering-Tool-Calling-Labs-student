@@ -156,14 +156,14 @@ tools:
       required: [query]
 
   - name: search_topic_notes
-    description: "Search local demo focus notes for the AI research intelligence topic file. Use only when the user explicitly asks about the demo focus topic, the local focus notes/file, or what topic is in scope for this lab demo. Do not use for general capability questions, live news, company policy, URLs, social posts, or papers."
+    description: "Search local demo focus notes for the AI research intelligence topic file. Use only when the user explicitly asks about the demo focus topic, the local focus notes/file, or what topic is in scope for this lab demo. Pass the user's original demo/focus question as query; do not rewrite it to generic keywords. Do not use for general capability questions, live news, company policy, URLs, social posts, or papers."
     parameters:
       type: object
       properties:
         query:
           type: string
           default: ""
-          description: "Question or keywords about the chatbot focus topic and demo scope."
+          description: "Original user question or keywords about the chatbot focus topic and demo scope."
         top_k:
           type: integer
           default: 3

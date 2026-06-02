@@ -1,0 +1,55 @@
+{
+  "transcript_id": "ui_v3_20260602T164948869451.transcript",
+  "version": "v3",
+  "artifact_version": "v3-e9f18473b0b7",
+  "system_prompt_sha256": "68ccefe78898850731f7e592af0740e556e9f3ec08dbcdc226f27abe640c5837",
+  "tools_sha256": "8ed9837ab155aca32ab4c0416f45d302ae2a683573086bbc90ffd2dac330cdf9",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "ui": "streamlit",
+  "topic": "AI research intelligence",
+  "turns": [
+    {
+      "user": "Demo này tập trung vào chủ đề gì?",
+      "started_at": "2026-06-02T16:55:28",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "search_topic_notes",
+              "args": {
+                "query": "chủ đề",
+                "top_k": 3
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "search_topic_notes",
+              "args": {
+                "query": "chủ đề",
+                "top_k": 3
+              },
+              "result": {
+                "tool": "search_topic_notes",
+                "query": "chủ đề",
+                "results": [],
+                "freshness": "static_demo_focus_notes"
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Hiện tại, không có thông tin cụ thể nào về chủ đề tập trung của demo này. Nếu bạn có câu hỏi cụ thể hơn hoặc muốn biết về một khía cạnh nào đó, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "Hiện tại, không có thông tin cụ thể nào về chủ đề tập trung của demo này. Nếu bạn có câu hỏi cụ thể hơn hoặc muốn biết về một khía cạnh nào đó, hãy cho tôi biết!",
+      "ended_at": "2026-06-02T16:55:39"
+    }
+  ]
+}

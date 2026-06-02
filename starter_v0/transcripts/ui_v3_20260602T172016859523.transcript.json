@@ -1,0 +1,250 @@
+{
+  "transcript_id": "ui_v3_20260602T172016859523.transcript",
+  "version": "v3",
+  "artifact_version": "v3-85f70c7ca84f",
+  "system_prompt_sha256": "68ccefe78898850731f7e592af0740e556e9f3ec08dbcdc226f27abe640c5837",
+  "tools_sha256": "6863e20425849c9060cebcad498bb0e68cfc6e91b2ae508caf2a0fac368f7e73",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "ui": "streamlit",
+  "topic": "AI research intelligence",
+  "turns": [
+    {
+      "user": "ronaldo hay messi hơn ",
+      "started_at": "2026-06-02T17:20:33",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Câu hỏi này nằm ngoài phạm vi nghiên cứu của tôi. Tuy nhiên, cả Cristiano Ronaldo và Lionel Messi đều là những cầu thủ bóng đá xuất sắc nhất trong lịch sử, và sự so sánh giữa họ thường phụ thuộc vào quan điểm cá nhân của người hâm mộ. Nếu bạn cần thông tin cụ thể hơn về thành tích hoặc sự nghiệp của họ, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "Câu hỏi này nằm ngoài phạm vi nghiên cứu của tôi. Tuy nhiên, cả Cristiano Ronaldo và Lionel Messi đều là những cầu thủ bóng đá xuất sắc nhất trong lịch sử, và sự so sánh giữa họ thường phụ thuộc vào quan điểm cá nhân của người hâm mộ. Nếu bạn cần thông tin cụ thể hơn về thành tích hoặc sự nghiệp của họ, hãy cho tôi biết!",
+      "ended_at": "2026-06-02T17:20:38"
+    },
+    {
+      "user": "bạn có nhiệm vụ gì ",
+      "started_at": "2026-06-02T17:20:57",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Tôi là một trợ lý nghiên cứu trí tuệ nhân tạo, chuyên hỗ trợ trong các lĩnh vực như nghiên cứu AI, các công ty AI, giám sát mô hình/tin tức, chính sách nguồn, và các tín hiệu công nghệ liên quan. Tôi có thể tìm kiếm thông tin, bài báo, tin tức, và các bài viết trên mạng về các chủ đề liên quan đến AI. Nếu bạn có câu hỏi cụ thể hoặc cần thông tin nào đó, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "Tôi là một trợ lý nghiên cứu trí tuệ nhân tạo, chuyên hỗ trợ trong các lĩnh vực như nghiên cứu AI, các công ty AI, giám sát mô hình/tin tức, chính sách nguồn, và các tín hiệu công nghệ liên quan. Tôi có thể tìm kiếm thông tin, bài báo, tin tức, và các bài viết trên mạng về các chủ đề liên quan đến AI. Nếu bạn có câu hỏi cụ thể hoặc cần thông tin nào đó, hãy cho tôi biết!",
+      "ended_at": "2026-06-02T17:21:01"
+    },
+    {
+      "user": "bạn tìm cho tôi 5 bài báo nổi tiếng về RAG",
+      "started_at": "2026-06-02T17:21:24",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "search_papers",
+              "args": {
+                "query": "RAG",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "search_papers",
+              "args": {
+                "query": "RAG",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "arxiv_search",
+                "query": "RAG",
+                "api_query": "all:RAG",
+                "total_results": 5125,
+                "items": [
+                  {
+                    "arxiv_id": "2401.15391v1",
+                    "title": "MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries",
+                    "summary": "Retrieval-augmented generation (RAG) augments large language models (LLM) by retrieving relevant knowledge, showing promising potential in mitigating LLM hallucinations and enhancing response quality, thereby facilitating the great adoption of LLMs in practice. However, we find that existing RAG systems are inadequate in answering multi-hop queries, which require retrieving and reasoning over multiple pieces of supporting evidence. Furthermore, to our knowledge, no existing RAG benchmarking dataset focuses on multi-hop queries. In this paper, we develop a novel dataset, MultiHop-RAG, which consists of a knowledge base, a large collection of multi-hop queries, their ground-truth answers, and the associated supporting evidence. We detail the procedure of building the dataset, utilizing an English news article dataset as the underlying RAG knowledge base. We demonstrate the benchmarking utility of MultiHop-RAG in two experiments. The first experiment compares different embedding models for retrieving evidence for multi-hop queries. In the second experiment, we examine the capabilities of various state-of-the-art LLMs, including GPT-4, PaLM, and Llama2-70B, in reasoning and answering multi-hop queries given the evidence. Both experiments reveal that existing RAG methods perform unsatisfactorily in retrieving and answering multi-hop queries. We hope MultiHop-RAG will be a valuable resource for the community in developing effective RAG systems, thereby facilitating greater adoption of LLMs in practice. The MultiHop-RAG and implemented RAG system is publicly available at https://github.com/yixuantt/MultiHop-RAG/.",
+                    "authors": [
+                      "Yixuan Tang",
+                      "Yi Yang"
+                    ],
+                    "published": "2024-01-27T11:41:48Z",
+                    "updated": "2024-01-27T11:41:48Z",
+                    "url": "http://arxiv.org/abs/2401.15391v1",
+                    "pdf_url": "https://arxiv.org/pdf/2401.15391v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2412.12881v1",
+                    "title": "RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement",
+                    "summary": "Existing large language models (LLMs) show exceptional problem-solving capabilities but might struggle with complex reasoning tasks. Despite the successes of chain-of-thought and tree-based search methods, they mainly depend on the internal knowledge of LLMs to search over intermediate reasoning steps, limited to dealing with simple tasks involving fewer reasoning steps. In this paper, we propose \\textbf{RAG-Star}, a novel RAG approach that integrates the retrieved information to guide the tree-based deliberative reasoning process that relies on the inherent knowledge of LLMs. By leveraging Monte Carlo Tree Search, RAG-Star iteratively plans intermediate sub-queries and answers for reasoning based on the LLM itself. To consolidate internal and external knowledge, we propose an retrieval-augmented verification that utilizes query- and answer-aware reward modeling to provide feedback for the inherent reasoning of LLMs. Our experiments involving Llama-3.1-8B-Instruct and GPT-4o demonstrate that RAG-Star significantly outperforms previous RAG and reasoning methods.",
+                    "authors": [
+                      "Jinhao Jiang",
+                      "Jiayi Chen",
+                      "Junyi Li",
+                      "Ruiyang Ren",
+                      "Shijie Wang",
+                      "Wayne Xin Zhao",
+                      "Yang Song",
+                      "Tao Zhang"
+                    ],
+                    "published": "2024-12-17T13:05:36Z",
+                    "updated": "2024-12-17T13:05:36Z",
+                    "url": "http://arxiv.org/abs/2412.12881v1",
+                    "pdf_url": "https://arxiv.org/pdf/2412.12881v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.AI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2402.07483v2",
+                    "title": "T-RAG: Lessons from the LLM Trenches",
+                    "summary": "Large Language Models (LLM) have shown remarkable language capabilities fueling attempts to integrate them into applications across a wide range of domains. An important application area is question answering over private enterprise documents where the main considerations are data security, which necessitates applications that can be deployed on-prem, limited computational resources and the need for a robust application that correctly responds to queries. Retrieval-Augmented Generation (RAG) has emerged as the most prominent framework for building LLM-based applications. While building a RAG is relatively straightforward, making it robust and a reliable application requires extensive customization and relatively deep knowledge of the application domain. We share our experiences building and deploying an LLM application for question answering over private organizational documents. Our application combines the use of RAG with a finetuned open-source LLM. Additionally, our system, which we call Tree-RAG (T-RAG), uses a tree structure to represent entity hierarchies within the organization. This is used to generate a textual description to augment the context when responding to user queries pertaining to entities within the organization's hierarchy. Our evaluations, including a Needle in a Haystack test, show that this combination performs better than a simple RAG or finetuning implementation. Finally, we share some lessons learned based on our experiences building an LLM application for real-world use.",
+                    "authors": [
+                      "Masoomali Fatehkia",
+                      "Ji Kim Lucas",
+                      "Sanjay Chawla"
+                    ],
+                    "published": "2024-02-12T08:45:08Z",
+                    "updated": "2024-06-06T14:42:47Z",
+                    "url": "http://arxiv.org/abs/2402.07483v2",
+                    "pdf_url": "https://arxiv.org/pdf/2402.07483v2",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.AI",
+                    "categories": [
+                      "cs.AI",
+                      "cs.CL"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2504.01346v4",
+                    "title": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking",
+                    "summary": "Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs) by integrating them with an external knowledge base to improve the answer relevance and accuracy. In real-world scenarios, beyond pure text, a substantial amount of knowledge is stored in tables, and user questions often require retrieving answers that are distributed across multiple tables. Retrieving knowledge from a table corpora (i.e., various individual tables) for a question remains nascent, at least, for (i) how to understand intra- and inter-table knowledge effectively, (ii) how to filter unnecessary tables and how to retrieve the most relevant tables efficiently, (iii) how to prompt LLMs to infer over the retrieval, (iv) how to evaluate the corresponding performance in a realistic setting. Facing the above challenges, in this paper, we first propose a table-corpora-aware RAG framework, named T-RAG, which consists of the hierarchical memory index, multi-stage retrieval, and graph-aware prompting for effective and efficient table knowledge retrieval and inference. Further, we first develop a multi-table question answering benchmark named MultiTableQA, which spans 3 different task types, 57,193 tables, and 23,758 questions in total, and the sources are all from real-world scenarios. Based on MultiTableQA, we did the holistic comparison over table retrieval methods, RAG methods, and table-to-graph representation learning methods, where T-RAG shows the leading accuracy, recall, and running time performance. Also, under T-RAG, we evaluate the inference ability upgrade of different LLMs. Code and Data are available at https://github.com/jiaruzouu/T-RAG",
+                    "authors": [
+                      "Jiaru Zou",
+                      "Dongqi Fu",
+                      "Sirui Chen",
+                      "Xinrui He",
+                      "Zihao Li",
+                      "Yada Zhu",
+                      "Jiawei Han",
+                      "Jingrui He"
+                    ],
+                    "published": "2025-04-02T04:24:41Z",
+                    "updated": "2025-10-05T07:24:41Z",
+                    "url": "http://arxiv.org/abs/2504.01346v4",
+                    "pdf_url": "https://arxiv.org/pdf/2504.01346v4",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.IR",
+                      "cs.LG"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2409.03708v2",
+                    "title": "RAG based Question-Answering for Contextual Response Prediction System",
+                    "summary": "Large Language Models (LLMs) have shown versatility in various Natural Language Processing (NLP) tasks, including their potential as effective question-answering systems. However, to provide precise and relevant information in response to specific customer queries in industry settings, LLMs require access to a comprehensive knowledge base to avoid hallucinations. Retrieval Augmented Generation (RAG) emerges as a promising technique to address this challenge. Yet, developing an accurate question-answering framework for real-world applications using RAG entails several challenges: 1) data availability issues, 2) evaluating the quality of generated content, and 3) the costly nature of human evaluation. In this paper, we introduce an end-to-end framework that employs LLMs with RAG capabilities for industry use cases. Given a customer query, the proposed system retrieves relevant knowledge documents and leverages them, along with previous chat history, to generate response suggestions for customer service agents in the contact centers of a major retail company. Through comprehensive automated and human evaluations, we show that this solution outperforms the current BERT-based algorithms in accuracy and relevance. Our findings suggest that RAG-based LLMs can be an excellent support to human customer service representatives by lightening their workload.",
+                    "authors": [
+                      "Sriram Veturi",
+                      "Saurabh Vaichal",
+                      "Reshma Lal Jagadheesh",
+                      "Nafis Irtiza Tripto",
+                      "Nian Yan"
+                    ],
+                    "published": "2024-09-05T17:14:23Z",
+                    "updated": "2024-09-06T14:18:20Z",
+                    "url": "http://arxiv.org/abs/2409.03708v2",
+                    "pdf_url": "https://arxiv.org/pdf/2409.03708v2",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.IR"
+                    ]
+                  }
+                ],
+                "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là 5 bài báo nổi bật về Retrieval-Augmented Generation (RAG):\n\n1. **[MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries](http://arxiv.org/abs/2401.15391v1)**\n   - **Tác giả**: Yixuan Tang, Yi Yang\n   - **Tóm tắt**: Bài báo phát triển một tập dữ liệu mới, MultiHop-RAG, để đánh giá khả năng của các hệ thống RAG trong việc trả lời các truy vấn đa bước. Nghiên cứu cho thấy các phương pháp RAG hiện tại không đủ khả năng trong việc truy xuất và trả lời các truy vấn đa bước.\n   - **Ngày xuất bản**: 27 tháng 1, 2024\n   - [PDF](https://arxiv.org/pdf/2401.15391v1)\n\n2. **[RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement](http://arxiv.org/abs/2412.12881v1)**\n   - **Tác giả**: Jinhao Jiang, Jiayi Chen, Junyi Li, Ruiyang Ren, Shijie Wang, Wayne Xin Zhao, Yang Song, Tao Zhang\n   - **Tóm tắt**: Bài báo giới thiệu RAG-Star, một phương pháp RAG mới kết hợp thông tin truy xuất để hướng dẫn quá trình suy luận. Nghiên cứu cho thấy RAG-Star vượt trội hơn so với các phương pháp RAG và suy luận trước đó.\n   - **Ngày xuất bản**: 17 tháng 12, 2024\n   - [PDF](https://arxiv.org/pdf/2412.12881v1)\n\n3. **[T-RAG: Lessons from the LLM Trenches](http://arxiv.org/abs/2402.07483v2)**\n   - **Tác giả**: Masoomali Fatehkia, Ji Kim Lucas, Sanjay Chawla\n   - **Tóm tắt**: Bài báo chia sẻ kinh nghiệm xây dựng và triển khai một ứng dụng LLM cho việc trả lời câu hỏi dựa trên tài liệu tổ chức. Hệ thống T-RAG sử dụng cấu trúc cây để đại diện cho các phân cấp thực thể trong tổ chức.\n   - **Ngày xuất bản**: 12 tháng 2, 2024\n   - [PDF](https://arxiv.org/pdf/2402.07483v2)\n\n4. **[RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking](http://arxiv.org/abs/2504.01346v4)**\n   - **Tác giả**: Jiaru Zou, Dongqi Fu, Sirui Chen, Xinrui He, Zihao Li, Yada Zhu, Jiawei Han, Jingrui He\n   - **Tóm tắt**: Bài báo đề xuất một khung RAG mới cho việc truy xuất kiến thức từ các bảng, cùng với một bộ dữ liệu benchmark mới cho câu hỏi đa bảng. Nghiên cứu cho thấy T-RAG có độ chính xác và hiệu suất tốt hơn so với các phương pháp khác.\n   - **Ngày xuất bản**: 2 tháng 4, 2025\n   - [PDF](https://arxiv.org/pdf/2504.01346v4)\n\n5. **[RAG based Question-Answering for Contextual Response Prediction System](http://arxiv.org/abs/2409.03708v2)**\n   - **Tác giả**: Sriram Veturi, Saurabh Vaichal, Reshma Lal Jagadheesh, Nafis Irtiza Tripto, Nian Yan\n   - **Tóm tắt**: Bài báo giới thiệu một khung end-to-end sử dụng RAG cho các trường hợp sử dụng trong ngành, cho thấy rằng các mô hình LLM dựa trên RAG có thể hỗ trợ hiệu quả cho các đại diện dịch vụ khách hàng.\n   - **Ngày xuất bản**: 5 tháng 9, 2024\n   - [PDF](https://arxiv.org/pdf/2409.03708v2)\n\nNếu bạn cần thêm thông tin chi tiết về bất kỳ bài báo nào, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "Dưới đây là 5 bài báo nổi bật về Retrieval-Augmented Generation (RAG):\n\n1. **[MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries](http://arxiv.org/abs/2401.15391v1)**\n   - **Tác giả**: Yixuan Tang, Yi Yang\n   - **Tóm tắt**: Bài báo phát triển một tập dữ liệu mới, MultiHop-RAG, để đánh giá khả năng của các hệ thống RAG trong việc trả lời các truy vấn đa bước. Nghiên cứu cho thấy các phương pháp RAG hiện tại không đủ khả năng trong việc truy xuất và trả lời các truy vấn đa bước.\n   - **Ngày xuất bản**: 27 tháng 1, 2024\n   - [PDF](https://arxiv.org/pdf/2401.15391v1)\n\n2. **[RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement](http://arxiv.org/abs/2412.12881v1)**\n   - **Tác giả**: Jinhao Jiang, Jiayi Chen, Junyi Li, Ruiyang Ren, Shijie Wang, Wayne Xin Zhao, Yang Song, Tao Zhang\n   - **Tóm tắt**: Bài báo giới thiệu RAG-Star, một phương pháp RAG mới kết hợp thông tin truy xuất để hướng dẫn quá trình suy luận. Nghiên cứu cho thấy RAG-Star vượt trội hơn so với các phương pháp RAG và suy luận trước đó.\n   - **Ngày xuất bản**: 17 tháng 12, 2024\n   - [PDF](https://arxiv.org/pdf/2412.12881v1)\n\n3. **[T-RAG: Lessons from the LLM Trenches](http://arxiv.org/abs/2402.07483v2)**\n   - **Tác giả**: Masoomali Fatehkia, Ji Kim Lucas, Sanjay Chawla\n   - **Tóm tắt**: Bài báo chia sẻ kinh nghiệm xây dựng và triển khai một ứng dụng LLM cho việc trả lời câu hỏi dựa trên tài liệu tổ chức. Hệ thống T-RAG sử dụng cấu trúc cây để đại diện cho các phân cấp thực thể trong tổ chức.\n   - **Ngày xuất bản**: 12 tháng 2, 2024\n   - [PDF](https://arxiv.org/pdf/2402.07483v2)\n\n4. **[RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking](http://arxiv.org/abs/2504.01346v4)**\n   - **Tác giả**: Jiaru Zou, Dongqi Fu, Sirui Chen, Xinrui He, Zihao Li, Yada Zhu, Jiawei Han, Jingrui He\n   - **Tóm tắt**: Bài báo đề xuất một khung RAG mới cho việc truy xuất kiến thức từ các bảng, cùng với một bộ dữ liệu benchmark mới cho câu hỏi đa bảng. Nghiên cứu cho thấy T-RAG có độ chính xác và hiệu suất tốt hơn so với các phương pháp khác.\n   - **Ngày xuất bản**: 2 tháng 4, 2025\n   - [PDF](https://arxiv.org/pdf/2504.01346v4)\n\n5. **[RAG based Question-Answering for Contextual Response Prediction System](http://arxiv.org/abs/2409.03708v2)**\n   - **Tác giả**: Sriram Veturi, Saurabh Vaichal, Reshma Lal Jagadheesh, Nafis Irtiza Tripto, Nian Yan\n   - **Tóm tắt**: Bài báo giới thiệu một khung end-to-end sử dụng RAG cho các trường hợp sử dụng trong ngành, cho thấy rằng các mô hình LLM dựa trên RAG có thể hỗ trợ hiệu quả cho các đại diện dịch vụ khách hàng.\n   - **Ngày xuất bản**: 5 tháng 9, 2024\n   - [PDF](https://arxiv.org/pdf/2409.03708v2)\n\nNếu bạn cần thêm thông tin chi tiết về bất kỳ bài báo nào, hãy cho tôi biết!",
+      "ended_at": "2026-06-02T17:21:55"
+    },
+    {
+      "user": "check cho tôi bài báo thứ nhất bạn tìm được và tóm tắt nó ",
+      "started_at": "2026-06-02T17:22:23",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "read_paper_text",
+              "args": {
+                "arxiv_url": "http://arxiv.org/abs/2401.15391v1"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "read_paper_text",
+              "args": {
+                "arxiv_url": "http://arxiv.org/abs/2401.15391v1"
+              },
+              "result": {
+                "tool": "get_arxiv_paper_text",
+                "arxiv_id": "2401.15391v1",
+                "url": "https://arxiv.org/abs/2401.15391v1",
+                "pdf_url": "https://arxiv.org/pdf/2401.15391v1.pdf",
+                "pdf_path": "E:\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\arxiv_papers\\2401.15391v1.pdf",
+                "txt_path": "E:\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs-student\\starter_v0\\arxiv_papers\\2401.15391v1.txt",
+                "page_count": 14,
+                "pages_read": 5,
+                "chars_returned": 8000,
+                "items": [
+                  {
+                    "title": "arXiv paper 2401.15391v1",
+                    "url": "https://arxiv.org/abs/2401.15391v1",
+                    "source": "arxiv.org",
+                    "summary": "MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for\nMulti-Hop Queries\nYixuan Tang and Yi Yang\nHong Kong University of Science and Technology\n{yixuantang,imyiyang}@ust.hk\nAbstract\nRetrieval-augmented generation (RAG) aug-\nments large language models (LLM) by re-\ntrieving relevant knowledge, showing promis-\ning potential in mitigating LLM hallucinations\nand enhancing response quality, thereby facil-\nitating the great adoption of LLMs in prac-\ntice. However, we find that existing RAG sys-\ntems are inadequate in answering multi-hop\nqueries, which require retrieving and reasoning\nover multiple pieces of supporting evidence.\nFurthermore, to our knowledge, no existing\nRAG benchmarking dataset focuses on multi-\nhop queries. In this paper, we develop a novel\ndataset, MultiHop-RAG, which consists of a\nknowledge base, a large collection of multi-\nhop queries, their ground-truth answers, and\nthe associated supporting evidence. We detail\nthe procedure of building the dataset, utiliz-\ning an English news article dataset as the un-\nderlying RAG knowledge base. We demon-\nstrate the benchmarking utility of MultiHop-\nRAG in two experiments. The first experiment\ncompares different embedding models for re-\ntrieving evidence for multi-hop queries. In the\nsecond experiment, we examine the capabili-\nties of various state-of-the-art LLMs, includ-\ning GPT-4, PaLM, and Llama2-70B, in rea-\nsoning and answering multi-hop queries given\nthe evidence. Both experiments reveal that ex-\nisting RAG methods perform unsatisfactorily\nin retrieving and answering multi-hop queries.\nWe hope MultiHop-RAG will be a valuable re-\nsource for the community in developing effec-\ntive RAG systems, thereby facilitating greater\nadoption of LLMs in practice. The MultiHop-\nRAG and implemented RAG system is publicly\navailable at https://github.com/yixuantt/\nMultiHop-RAG/.\n1 Introduction\nThe emergence of large language models (LLMs),\nsuch as ChatGPT, has fostered a wide range of inno-\nvations, powering intelligent chatbots and other nat-\nural language processing (NLP) applications (Ope-\nFigure 1: RAG with multi-hop query.\nnAI, 2023). One promising use case is Retrieval-\nAugmented Generation (RAG) (Asai et al., 2023),\nwhich optimizes the output of a large language\nmodel by referencing an external knowledge base\noutside of the LLM training data sources before\ngenerating a response. RAG improves LLM’s re-\nsponse (Borgeaud et al., 2022) and also mitigates\nthe occurrence of hallucinations, thereby enhancing\nthe models’ credibility (Gao et al., 2023). LLM-\nbased frameworks, such as LlamaIndex (Liu, 2022)\nand LangChain (Chase, 2022), specialize in sup-\nporting RAG pipelines.\nIn real-world Retrieval-Augmented Generation\n(RAG) applications, a user’s query often necessi-\ntates retrieving and reasoning over evidence from\nmultiple documents, a process known asmulti-hop\nquery. For instance, consider financial analysis us-\ning a database of financial reports. A financial ana-\nlyst might query, Which company among Google,\nApple, and Nvidia reported the largest profit mar-\ngins in their third-quarter reports for 2023? or\ninquire about a specific company’s performance\nover time, such as How does Apple’s sales trend\nlook over the past three years? These queries re-\nquire evidence from multiple documents to formu-\nlate an answer. Due to the multifaceted nature of\nsuch queries, involving information from various\nsources, traditional similarity matching methods\nlike cosine similarity between query and financial\narXiv:2401.15391v1  [cs.CL]  27 Jan 2024\n\nNews source Fortune Magazine The Sydney Morning Herald\nEvidence Back then, just like today, home prices had boomed\nfor years before Fed officials were ultimately forced\nto hike interest rates aggressively in an attempt to\nfight inflation.\nPostponements of such reports could complicate\nthings for the Fed, which has insisted it will make\nupcoming decisions on interest rates based on what\nincoming data say about the economy.\nClaim Federal Reserve officials were forced to aggressively\nhike interest rates to combat inflation after years of\nbooming home prices.\nThe Federal Reserve has insisted that it will base its\nupcoming decisions on interest rates on the incoming\neconomic data.\nBridge-Topic Interest rate hikes to combat inflation Interest rate decisions based on economic data\nBridge-Entity Federal Reserve Federal Reserve\nQuery Does the article from Fortune suggest that the Federal Reserve’s interest rate hikes are a response to past\nconditions, such as booming home prices, while The Sydney Morning Herald article indicates that the\nFederal Reserve’s future interest rate decisions will be based on incoming economic data?\nAnswer Yes\nTable 1: An example of a multi-hop query, including supporting evidence from two news articles, the paraphrased\nclaim, the bridge-topic and bridge-entity, and the corresponding answer.\nreport chunk embeddings might not yield optimal\nresults. We demonstrate this multi-hop retrieval\nprocess in Figure 1.\nHowever, existing RAG benchmarks, such as\nRGB (Chen et al., 2023) and RECALL (Liu et al.,\n2023), mainly evaluate a simple case where the an-\nswer of a query can be retrieved and solved using\none single piece of evidence. None of these bench-\nmarks assess the retrieval and reasoning capability\nof LLMs for complex multi-hop queries. To ad-\ndress this gap and make RAG benchmarking more\nclosely resemble real-world scenarios, in this paper,\nwe introduce MultiHop-RAG. To our knowledge,\nMultiHop-RAG is one of the first RAG datasets\nfocusing specifically on multi-hop queries.\nBased on the RAG queries commonly encoun-\ntered in real-world scenarios, we first categorize\nmulti-hop queries into four types: Inference query,\nComparison query , Temporal query , and Null\nquery. The first three types — Inference, Com-\nparison, and Temporal — require the retrieval and\nanalysis of evidence from multiple sources, encom-\npassing tasks like inferring relationships, compar-\ning data points, and sequencing events over time.\nThe Null query represents a scenario where the\nquery cannot be derived from the knowledge base.\nThis category is crucial for assessing whether an\nLLM might hallucinate an answer to a multi-hop\nquery when the retrieved text lacks relevance.\nWe construct our RAG knowledge base using a\ncollection of news articles. Using GPT-4 as a data\ngenerator, we then take an extensive procedure to\nconstruct a diverse set of multi-hop queries, each\nrequiring the retrieval and reasoning over multiple\ndocuments. An example of query construction is\nshown in Table 1. First, we begin by extracting\nfactual sentences from each news article as evi-\ndence. For example, an extracted piece of evidence\nfrom an article may state: “Back then, just like\ntoday, home prices had boomed for years before\nFed officials were ultimately forced to hike interest\nrates aggressively in an attempt to fight inflation.”\nSecond, we input each evidence piece into GPT-4,\nprompting it to rephrase the evidence into a claim.\nThis claim is clarified with a disambiguated topic\nand entity. For instance, GPT-4 might rephrase the\naforementioned evidence into: “Federal Reserve\nofficials were forced to aggressively hike interest\nrates to combat inflation after years of booming\nhome prices”, identifying “Interest rate hikes to\ncombat inflation” as the topic and “Federal Re-\nserve” as the entity. These topics and entities act as\nbridges for constructing multi-hop queries, known\nas bridge-topic or bridge-entity. Next, we use GPT-\n4 to generate specific multi-hop queries related to\nthe same bridge-topic or bridge-entity, accompa-\nnied by the correct answers. Lastly, we undertake\na validation step to ensure the data quality.\nWe demonstrate the benchmarking capabilities\nof MultiHop-RAG using two experiments, utilizing\na RAG system implemented with LlamaIndex (Liu,\n2022). The first experiment involves a comparison\nof different embedding models for retrieving rele-\nvant evidence for multi-hop queries. In the second\ne"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Bài báo có tiêu đề **\"MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries\"** của Yixuan Tang và Yi Yang từ Đại học Khoa học và Công nghệ Hồng Kông, tập trung vào việc phát triển một tập dữ liệu mới có tên là MultiHop-RAG. Tập dữ liệu này được thiết kế để đánh giá khả năng của các hệ thống Retrieval-Augmented Generation (RAG) trong việc trả lời các truy vấn đa bước (multi-hop queries).\n\n### Tóm tắt nội dung chính:\n- **Mục tiêu**: Bài báo chỉ ra rằng các hệ thống RAG hiện tại không đủ khả năng trong việc trả lời các truy vấn đa bước, mà thường yêu cầu việc truy xuất và lý luận dựa trên nhiều bằng chứng hỗ trợ.\n- **Tập dữ liệu MultiHop-RAG**: Tập dữ liệu này bao gồm một cơ sở tri thức, một bộ sưu tập lớn các truy vấn đa bước, câu trả lời đúng và các bằng chứng hỗ trợ liên quan. Tác giả đã sử dụng một tập dữ liệu bài báo tiếng Anh làm cơ sở tri thức cho RAG.\n- **Thí nghiệm**: Bài báo mô tả hai thí nghiệm để kiểm tra khả năng của các mô hình RAG hiện tại. Thí nghiệm đầu tiên so sánh các mô hình nhúng khác nhau để truy xuất bằng chứng cho các truy vấn đa bước. Thí nghiệm thứ hai đánh giá khả năng của các mô hình LLM tiên tiến như GPT-4, PaLM và Llama2-70B trong việc lý luận và trả lời các truy vấn đa bước dựa trên bằng chứng.\n- **Kết quả**: Cả hai thí nghiệm cho thấy rằng các phương pháp RAG hiện tại hoạt động không hiệu quả trong việc truy xuất và trả lời các truy vấn đa bước.\n\nBài báo hy vọng rằng MultiHop-RAG sẽ là một nguồn tài nguyên quý giá cho cộng đồng trong việc phát triển các hệ thống RAG hiệu quả hơn, từ đó thúc đẩy việc áp dụng rộng rãi các mô hình LLM trong thực tế.\n\nBạn có thể xem bài báo đầy đủ tại [đây](https://arxiv.org/abs/2401.15391v1).",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "Bài báo có tiêu đề **\"MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries\"** của Yixuan Tang và Yi Yang từ Đại học Khoa học và Công nghệ Hồng Kông, tập trung vào việc phát triển một tập dữ liệu mới có tên là MultiHop-RAG. Tập dữ liệu này được thiết kế để đánh giá khả năng của các hệ thống Retrieval-Augmented Generation (RAG) trong việc trả lời các truy vấn đa bước (multi-hop queries).\n\n### Tóm tắt nội dung chính:\n- **Mục tiêu**: Bài báo chỉ ra rằng các hệ thống RAG hiện tại không đủ khả năng trong việc trả lời các truy vấn đa bước, mà thường yêu cầu việc truy xuất và lý luận dựa trên nhiều bằng chứng hỗ trợ.\n- **Tập dữ liệu MultiHop-RAG**: Tập dữ liệu này bao gồm một cơ sở tri thức, một bộ sưu tập lớn các truy vấn đa bước, câu trả lời đúng và các bằng chứng hỗ trợ liên quan. Tác giả đã sử dụng một tập dữ liệu bài báo tiếng Anh làm cơ sở tri thức cho RAG.\n- **Thí nghiệm**: Bài báo mô tả hai thí nghiệm để kiểm tra khả năng của các mô hình RAG hiện tại. Thí nghiệm đầu tiên so sánh các mô hình nhúng khác nhau để truy xuất bằng chứng cho các truy vấn đa bước. Thí nghiệm thứ hai đánh giá khả năng của các mô hình LLM tiên tiến như GPT-4, PaLM và Llama2-70B trong việc lý luận và trả lời các truy vấn đa bước dựa trên bằng chứng.\n- **Kết quả**: Cả hai thí nghiệm cho thấy rằng các phương pháp RAG hiện tại hoạt động không hiệu quả trong việc truy xuất và trả lời các truy vấn đa bước.\n\nBài báo hy vọng rằng MultiHop-RAG sẽ là một nguồn tài nguyên quý giá cho cộng đồng trong việc phát triển các hệ thống RAG hiệu quả hơn, từ đó thúc đẩy việc áp dụng rộng rãi các mô hình LLM trong thực tế.\n\nBạn có thể xem bài báo đầy đủ tại [đây](https://arxiv.org/abs/2401.15391v1).",
+      "ended_at": "2026-06-02T17:22:39"
+    }
+  ]
+}

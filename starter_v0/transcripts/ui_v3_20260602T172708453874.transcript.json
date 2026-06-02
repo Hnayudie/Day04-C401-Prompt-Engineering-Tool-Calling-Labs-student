@@ -1,0 +1,27 @@
+{
+  "transcript_id": "ui_v3_20260602T172708453874.transcript",
+  "version": "v3",
+  "artifact_version": "v3-85f70c7ca84f",
+  "system_prompt_sha256": "68ccefe78898850731f7e592af0740e556e9f3ec08dbcdc226f27abe640c5837",
+  "tools_sha256": "6863e20425849c9060cebcad498bb0e68cfc6e91b2ae508caf2a0fac368f7e73",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "ui": "streamlit",
+  "topic": "AI research intelligence",
+  "turns": [
+    {
+      "user": "thời tiết hôm nay ở hà nội",
+      "started_at": "2026-06-02T17:27:08",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Xin lỗi, nhưng tôi không thể cung cấp thông tin về thời tiết. Bạn có thể kiểm tra trên các trang web hoặc ứng dụng thời tiết để biết thông tin chi tiết.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "assistant": "Xin lỗi, nhưng tôi không thể cung cấp thông tin về thời tiết. Bạn có thể kiểm tra trên các trang web hoặc ứng dụng thời tiết để biết thông tin chi tiết.",
+      "ended_at": "2026-06-02T17:27:12"
+    }
+  ]
+}
